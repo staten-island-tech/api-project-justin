@@ -1,5 +1,6 @@
 import '../styles/style.css'
 import { selectors } from './DOMselectors'
+import { inner_generator } from './functions';
 
 const URL = "https://valorant-api.com/v1/agents"
 
@@ -19,7 +20,7 @@ let data;
 promise.then(function(result){
     console.log(result.data[0])
     console.log
-    selectors.datashow.innerHTML =  `<img src=${result.data[0].killfeedPortrait}>`
+    selectors.datashow.innerHTML =  inner_generator(result.data[0])
     data = result.data
 })
 
