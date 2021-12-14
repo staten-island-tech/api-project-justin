@@ -1,0 +1,23 @@
+:root{
+    --h1: 7.594rem;
+    --h2: 5.063rem; 
+    --h3: 3.375rem;
+    --h4: 2.25rem;
+    --h5: 1.5rem;
+  }
+  
+  h1{
+    font-size: var(--h1);
+  }
+  h2{
+    font-size: var(--h2);
+  }
+  h3{
+    font-size: var(--h3);
+  }
+  h4{
+    font-size: var(--h4);
+  }
+  h5{
+    font-size: var(--h5);
+  }

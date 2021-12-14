@@ -16,12 +16,13 @@ async function getData(URL){
 
 const promise = getData(URL)
 
+let agents;
 let data;
 promise.then(function(result){
-    console.log(result.data[0])
-    console.log
-    selectors.datashow.innerHTML =  inner_generator(result.data[0])
-    data = result.data
+    console.log(result.data)
+    console.log(selectors.body)
+    selectors.body.innerHTML =  inner_generator(result.data[0]);
+    data = result.data;
 })
 
 selectors.test.addEventListener('click', function(){
