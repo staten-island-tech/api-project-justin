@@ -15,8 +15,14 @@ async function getData(URL){
 
 const promise = getData(URL)
 
+let data;
 promise.then(function(result){
     console.log(result.data[0])
     console.log
     selectors.datashow.innerHTML =  `<img src=${result.data[0].killfeedPortrait}>`
+    data = result.data
+})
+
+selectors.test.addEventListener('click', function(){
+    console.log(data)
 })
