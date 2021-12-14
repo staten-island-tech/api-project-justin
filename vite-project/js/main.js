@@ -18,5 +18,5 @@ const promise = getData(URL)
 promise.then(function(result){
     console.log(result.data[0])
     console.log
-    selectors.datashow.innerHTML =  `<img src="${result.data[0]["displayIcon"]}"`
+    selectors.datashow.innerHTML =  `<img src=${result.data[0].killfeedPortrait}>`
 })
