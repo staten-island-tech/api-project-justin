@@ -29,24 +29,24 @@
 }
 
 .flip-card-front {
-  background-color: black;
+  background-color: #2aa198;
   color: white;
   padding: 10px;
   padding-bottom: 0px;
-  box-shadow: 1rem 1rem #fec5bb;
+  box-shadow: 1rem 1rem #FD4556;
   border-radius: 12px;
 }
 
 .flip-card-back {
   box-shadow: 1rem -1rem #bbb;
   border-radius: 12px;
-  background-color: #fec5bb;
-  color: black;
+  background-color: #FD4556;
+  color: #002b36;
   transform: rotateY(180deg);
 }
 
 .agent-icon{
-    width: 50%;
+    width: 60%;
 }
 .agent-role{
   display: flex;
@@ -61,4 +61,6 @@
 
 .agent-name{
   margin: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #073642;
 }

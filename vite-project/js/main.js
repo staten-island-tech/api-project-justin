@@ -29,7 +29,3 @@ promise.then(function(result){
     });
     data = result.data;
 })
-
-selectors.test.addEventListener('click', function(){
-    console.log(data)
-})
