@@ -1,7 +1,7 @@
 const selectors = {
     body: document.querySelector('body'),
-    datashow: document.querySelector("#datashow"),
-    test: document.querySelector("#test")
+    container: document.querySelector('.container'),
+    cards: document.querySelector(".cards-display")
 }
 
 export { selectors }

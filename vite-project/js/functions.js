@@ -2,7 +2,7 @@ function inner_generator (agent){
     return `<div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <h3 class="agent-name">${agent.developerName}</h3>
+        <h3 class="agent-name">${agent.displayName}</h3>
         <img class="agent-icon" src=${agent.displayIcon} alt="Breach">
         <div class="agent-role">
           <img class="role-icon" src=${agent.role.displayIcon}>

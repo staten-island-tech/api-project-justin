@@ -21,7 +21,12 @@ let data;
 promise.then(function(result){
     console.log(result.data)
     console.log(selectors.body)
-    selectors.body.innerHTML =  inner_generator(result.data[0]);
+    result.data.forEach(function(element){
+        if(element.role != null){
+            selectors.cards.insertAdjacentHTML('afterbegin', inner_generator(element))
+        }
+        
+    });
     data = result.data;
 })
 

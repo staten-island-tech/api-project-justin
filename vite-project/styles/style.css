@@ -5,3 +5,7 @@
 #datashow{
   width: 100%;
 }
+.cards-display{
+  display: flex;
+  flex-wrap: wrap;
+}
