@@ -1,20 +1,7 @@
 function inner_generator (agent){
-    return `<div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <h3 class="agent-name">${agent.displayName}</h3>
-        <img class="agent-icon" src=${agent.displayIcon} alt="Breach">
-        
-      </div>
-      <div class="flip-card-back">
-        <p class="agent-description">${agent.description}</p>
-        <div class="agent-role">
-          <img class="role-icon" src=${agent.role.displayIcon}>
-          <h5 class="role-name">${agent.role.displayName}</h5>
-        </div>
-      </div>
-    </div>
-  </div>`
+    return `
+        <a class="agent-link" href="${agent.displayName.toLowerCase()}.html" id="${agent.displayName.toLowerCase()}"><img class="agent-icon" src=${agent.displayIcon} alt="${agent.displayName}"></a>
+      `
 }
 
 export { inner_generator }

@@ -9,3 +9,13 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.agent-link{
+  width: 20%;
+  
+  margin: 10px;
+}
+
+.agent-icon{
+  background-color: aqua;
+}
