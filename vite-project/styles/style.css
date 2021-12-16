@@ -12,10 +12,11 @@
 
 .agent-link{
   width: 20%;
-  
   margin: 10px;
+  border: 10px double green;
+  background-color: aqua;
 }
 
-.agent-icon{
-  background-color: aqua;
+.agent-link:hover{
+  outline: 5px solid red;
 }
