@@ -23,7 +23,7 @@ promise.then(function(result){
     console.log(selectors.body)
     result.data.forEach(function(element){
         if(element.role != null){
-            selectors.cards.insertAdjacentHTML('afterbegin', inner_generator(element))
+            data.push(inner_generator(element));
         }
         
     });
