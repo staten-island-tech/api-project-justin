@@ -16,16 +16,31 @@ async function getData(URL){
 
 const promise = getData(URL)
 
-let agents;
-let data;
+let agents = [];
 promise.then(function(result){
     console.log(result.data)
-    console.log(selectors.body)
-    result.data.forEach(function(element){
-        if(element.role != null){
-            data.push(inner_generator(element));
+    result.data.forEach(function(el){
+        if(el.role != null){
+            agents.push({
+                inner: (inner_generator(el)),
+                data: el
+            })
+            
         }
-        
     });
-    data = result.data;
+})
+
+console.log(selectors.agent_submit)
+selectors.agent_submit.addEventListener("click", function(e){
+    e.preventDefault();
+    let searched_name = agents.filter(
+        (agent) => agent.data.displayName.toLowerCase() === selectors.agent_search.value.toLowerCase()
+    )
+    selectors.cards.innerHTML = ""
+    searched_name.forEach((agent) => selectors.cards.insertAdjacentHTML("afterbegin", 
+        agent.inner
+    ))
+    document.querySelectorAll(".agent-link").forEach(agent => agent.addEventListener('click', function(){
+        window.localStorage.setItem("agent", agent.id)
+    }))
 })
