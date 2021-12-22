@@ -17,6 +17,7 @@ async function getData(URL){
 const promise = getData(URL)
 
 let agents = [];
+let data; 
 promise.then(function(result){
     console.log(result.data)
     result.data.forEach(function(el){
@@ -25,7 +26,6 @@ promise.then(function(result){
                 inner: (inner_generator(el)),
                 data: el
             })
-            
         }
     });
 })
@@ -33,14 +33,18 @@ promise.then(function(result){
 console.log(selectors.agent_submit)
 selectors.agent_submit.addEventListener("click", function(e){
     e.preventDefault();
-    let searched_name = agents.filter(
+    let searched_names = agents.filter(
         (agent) => agent.data.displayName.toLowerCase() === selectors.agent_search.value.toLowerCase()
     )
+    console.log(JSON.parse(JSON.stringify((agents.filter((agent) => agent.data.displayName === "Reyna"))[0]["data"])))
     selectors.cards.innerHTML = ""
-    searched_name.forEach((agent) => selectors.cards.insertAdjacentHTML("afterbegin", 
+    searched_names.forEach((agent) => selectors.cards.insertAdjacentHTML("afterbegin", 
         agent.inner
     ))
-    document.querySelectorAll(".agent-link").forEach(agent => agent.addEventListener('click', function(){
-        window.localStorage.setItem("agent", agent.id)
+    document.querySelectorAll(".agent-link").forEach(link => link.addEventListener('click', function(){
+        window.localStorage.setItem("agent", link.id)
+        let agent_data = agents.filter(agent => agent.data.displayName.toLowerCase() === link.id.toLowerCase())[0]["data"]
+        window.localStorage.setItem("data", JSON.stringify(agent_data))
+        
     }))
 })

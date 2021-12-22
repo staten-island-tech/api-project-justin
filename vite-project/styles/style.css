@@ -26,3 +26,7 @@ body{
 .agent-link:hover{
   outline: 5px solid red;
 }
+
+.search-form{
+   text-align: center;
+}
