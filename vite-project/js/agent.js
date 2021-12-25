@@ -9,7 +9,7 @@ console.log(data.abilities);
 let info = data.role.description;
 let abil_name = data.role.displayName;
 console.log(info);
-selectors.display.innerHTML = `<h1>${abil_name}</h1><p>${info}</p>`;
+selectors.display.innerHTML = `<h3>${abil_name}</h3><p>${info}</p>`;
 selectors.container.insertAdjacentHTML(
   "afterbegin",
   `<img class="agent-img" src=${data.fullPortrait}>`
@@ -40,7 +40,6 @@ document.querySelectorAll(".button").forEach((button) =>
     if (name === data.displayName) {
       let info = data.role.description;
       let abil_name = data.role.displayName;
-      console.log(info);
       selectors.display.innerHTML = `<h3>${abil_name}</h3><p>${info}<h2>`;
     } else {
       let ability = buttons.filter(
@@ -48,7 +47,6 @@ document.querySelectorAll(".button").forEach((button) =>
       )[0];
       let info = ability.description;
       let abil_name = ability.displayName;
-      console.log(info);
       selectors.display.innerHTML = `<h3>${abil_name}</h3><p>${info}</p>`;
     }
   })

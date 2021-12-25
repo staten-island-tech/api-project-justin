@@ -15,7 +15,6 @@ body {
   column-gap: 2rem;
   justify-content: center space-around;
   row-gap: 2rem;
-  padding: 20px;
 }
 
 .agent-link {
@@ -28,15 +27,9 @@ body {
   outline: 5px solid #2aa198;
 }
 
-.search-form {
-  display: flex;
-  width: 100vw;
-  height: 100%;
-  justify-content: center;
-  margin-top: 8rem;
-}
-
 .form-text {
+  margin: auto;
+  margin-top: 8rem;
   height: 4rem;
   width: 30rem;
   outline: none;

@@ -41,6 +41,11 @@ selectors.agent_search.onkeyup = function () {
     displayed.forEach((agent) =>
       selectors.cards.insertAdjacentHTML("afterbegin", agent.inner)
     );
+    if (selectors.cards.innerHTML === "") {
+      selectors.cards.style.padding = "0px";
+    } else {
+      selectors.cards.style.padding = "20px";
+    }
     document.querySelectorAll(".agent-link").forEach((link) =>
       link.addEventListener("click", function () {
         window.localStorage.setItem("agent", link.id);
@@ -53,5 +58,6 @@ selectors.agent_search.onkeyup = function () {
     );
   } else {
     selectors.cards.innerHTML = "";
+    selectors.cards.style.padding = "0px";
   }
 };
