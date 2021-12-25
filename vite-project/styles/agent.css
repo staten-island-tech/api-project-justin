@@ -1,3 +1,5 @@
+@import url(base.css);
+
 body {
   background: url("../images/search-background.png") no-repeat center center
     fixed;
@@ -5,6 +7,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.agent-name {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .agent-container {

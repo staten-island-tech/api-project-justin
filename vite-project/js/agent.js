@@ -18,9 +18,16 @@ selectors.buttons.insertAdjacentHTML(
   "beforeend",
   `<button id="${data.displayName}" class="button"><img class="button-img" src=${data.role.displayIcon}></button>`
 );
+selectors.name.innerHTML = `<h1>${data.displayName}</h1>`;
+let ability_order = ["Grenade", "Ability1", "Ability2", "Ultimate"];
+let buttons = [];
 if (data.displayName === "Jett") {
+  ability_order.unshift("Passive");
 }
-data.abilities.forEach((ability) =>
+ability_order.forEach((slot) =>
+  buttons.push(data.abilities.filter((ability) => ability.slot === slot)[0])
+);
+buttons.forEach((ability) =>
   selectors.buttons.insertAdjacentHTML(
     "beforeend",
     `<button id="${ability.displayName}" class="button"><img class="button-img" src=${ability.displayIcon}></button>`
@@ -34,15 +41,15 @@ document.querySelectorAll(".button").forEach((button) =>
       let info = data.role.description;
       let abil_name = data.role.displayName;
       console.log(info);
-      selectors.display.innerHTML = `<h1>${abil_name}</h1><p>${info}</p>`;
+      selectors.display.innerHTML = `<h3>${abil_name}</h3><p>${info}<h2>`;
     } else {
-      let ability = data.abilities.filter(
+      let ability = buttons.filter(
         (ability) => ability.displayName === name
       )[0];
       let info = ability.description;
       let abil_name = ability.displayName;
       console.log(info);
-      selectors.display.innerHTML = `<h1>${abil_name}</h1><p>${info}</p>`;
+      selectors.display.innerHTML = `<h3>${abil_name}</h3><p>${info}</p>`;
     }
   })
 );

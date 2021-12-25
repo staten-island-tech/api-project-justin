@@ -1,5 +1,5 @@
 @import url(base.css);
-
+@import url(flip.css);
 body {
   background: url("../images/search-background.png") no-repeat center center
     fixed;
@@ -11,23 +11,36 @@ body {
 .cards-display {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10rem;
+  background-color: #fd4556;
+  column-gap: 2rem;
+  justify-content: center space-around;
+  row-gap: 2rem;
+  padding: 20px;
 }
 
 .agent-link {
-  width: 20%;
-  margin: 10px;
-  border: 10px double green;
-  background-color: aqua;
+  width: 15rem;
+  border: 10px double #fd4556;
+  background-color: rgb(228, 228, 228);
 }
 
 .agent-link:hover {
-  outline: 5px solid red;
-}
-
-#agent-submit {
-  margin: auto;
+  outline: 5px solid #2aa198;
 }
 
 .search-form {
-  text-align: center;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.form-text {
+  height: 4rem;
+  width: 30rem;
+  outline: none;
+  padding: 2.5rem;
+  font-size: 2rem;
 }

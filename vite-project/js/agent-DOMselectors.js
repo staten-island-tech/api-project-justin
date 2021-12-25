@@ -4,6 +4,7 @@ const selectors = {
   info: document.querySelector(".agent-abilites"),
   buttons: document.querySelector(".buttons"),
   display: document.querySelector(".agent-info-display"),
+  name: document.querySelector(".agent-name"),
 };
 
 export { selectors };
