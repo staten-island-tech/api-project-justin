@@ -1,32 +1,33 @@
-@import url(flip.css);
 @import url(base.css);
 
-body{
-  background: url("agent-background.png") no-repeat center center fixed; 
+body {
+  background: url("../images/search-background.png") no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-#datashow{
-  width: 100%;
-}
-.cards-display{
+.cards-display {
   display: flex;
   flex-wrap: wrap;
 }
 
-.agent-link{
+.agent-link {
   width: 20%;
   margin: 10px;
   border: 10px double green;
   background-color: aqua;
 }
 
-.agent-link:hover{
+.agent-link:hover {
   outline: 5px solid red;
 }
 
-.search-form{
-   text-align: center;
+#agent-submit {
+  margin: auto;
+}
+
+.search-form {
+  text-align: center;
 }

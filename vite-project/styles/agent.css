@@ -1,0 +1,36 @@
+body {
+  background: url("../images/search-background.png") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.agent-container {
+  display: flex;
+}
+.agent-img {
+  width: 50%;
+  height: 50%;
+}
+.buttons {
+  display: flex;
+}
+
+.agent-abilities {
+  width: 50%;
+  margin: 150px;
+  margin-left: 0px;
+}
+.button {
+  background-color: black;
+}
+.button-img {
+  width: 4rem;
+}
+
+.agent-info-display {
+  color: white;
+  width: 100%;
+}
