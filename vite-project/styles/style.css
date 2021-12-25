@@ -1,8 +1,7 @@
 @import url(base.css);
 @import url(flip.css);
 body {
-  background: url("../images/search-background.png") no-repeat center center
-    fixed;
+  background: url("search-background.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,7 +21,7 @@ body {
 .agent-link {
   width: 15rem;
   border: 10px double #fd4556;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(238, 238, 238);
 }
 
 .agent-link:hover {
