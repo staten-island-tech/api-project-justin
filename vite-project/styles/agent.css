@@ -61,8 +61,8 @@ body {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
   .agent-abilities {
-    width: 50%;
-    margin: auto;
+    width: 100%;
+    margin-left: auto;
     margin: 0px;
   }
   body {
