@@ -29,8 +29,6 @@ promise.then(function (result) {
     }
   });
 });
-
-console.log(selectors.agent_submit);
 selectors.agent_search.onkeyup = function () {
   let query = selectors.agent_search.value.toLowerCase();
   if (query != "") {
