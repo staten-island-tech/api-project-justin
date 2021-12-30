@@ -52,18 +52,18 @@ body {
   .button-img {
     width: 2rem;
   }
+
+  h1 {
+    font-size: 6em;
+  }
   .agent-name {
     color: white;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
-  h1 {
-    font-size: 6em;
-  }
   .agent-abilities {
     width: 50%;
-    margin: 150px;
+    margin: auto;
     margin: 0px;
-    margin-left: 80px;
   }
   body {
     background: url("/search-background.png") no-repeat center center fixed;
