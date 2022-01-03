@@ -5,6 +5,7 @@ const selectors = {
   buttons: document.querySelector(".buttons"),
   display: document.querySelector(".agent-info-display"),
   name: document.querySelector(".agent-name"),
+  role: document.querySelector(".agent-role")
 };
 
 export { selectors };

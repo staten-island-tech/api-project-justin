@@ -9,7 +9,7 @@ console.log(data.abilities);
 let info = data.role.description;
 let abil_name = data.role.displayName;
 console.log(info);
-selectors.display.innerHTML = `<h3>${abil_name}</h3><p>${info}</p>`;
+selectors.display.innerHTML = `<p class="agent-description">${data.description}</p><h3>${abil_name}</h3><p>${info}</p>`;
 selectors.container.insertAdjacentHTML(
   "afterbegin",
   `<img class="agent-img" src=${data.fullPortrait}>`
@@ -19,6 +19,7 @@ selectors.buttons.insertAdjacentHTML(
   `<button id="${data.displayName}" class="button"><img class="button-img" src=${data.role.displayIcon}></button>`
 );
 selectors.name.innerHTML = `<h1>${data.displayName}</h1>`;
+selectors.role.innerHTML = `<h4>${data.role.displayName}</h4>`
 let ability_order = ["Grenade", "Ability1", "Ability2", "Ultimate"];
 let buttons = [];
 if (data.displayName === "Jett") {
@@ -40,7 +41,7 @@ document.querySelectorAll(".button").forEach((button) =>
     if (name === data.displayName) {
       let info = data.role.description;
       let abil_name = data.role.displayName;
-      selectors.display.innerHTML = `<h3>${abil_name}</h3><p>${info}<h2>`;
+      selectors.display.innerHTML = `<p class="agent-description">${data.description}</p><h3>${abil_name}</h3><p>${info}</p>`;
     } else {
       let ability = buttons.filter(
         (ability) => ability.displayName === name

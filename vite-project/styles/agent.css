@@ -1,4 +1,5 @@
 @import url(base.css);
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Outfit:wght@800&display=swap');
 
 body {
   background: url("/search-background.png") no-repeat center center fixed;
@@ -42,7 +43,24 @@ body {
   width: 100%;
 }
 
-@media (max-width: 500px) {
+.agent-role{
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.agent-description{
+  color: #fdf6e3;
+}
+
+.agent-info-display{
+  margin-top: 20px;
+}
+@media (max-width: 1000px) {
+  .agent-img {
+    width: 70%;
+  }
+}
+@media (max-width: 650px) {
   .agent-container {
     flex-direction: column;
   }
