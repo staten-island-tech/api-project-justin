@@ -57,8 +57,8 @@ body {
 }
 
 .abil-name{
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 3em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 @media (max-width: 1000px) {
   .agent-img {

@@ -9,7 +9,7 @@ console.log(data.abilities);
 let info = data.role.description;
 let abil_name = data.role.displayName;
 console.log(info);
-selectors.display.innerHTML = `<p class="agent-description">${data.description}</p><h3>${abil_name}</h3><p>${info}</p>`;
+selectors.display.innerHTML = `<p class="agent-description">${data.description}</p><h3 class="abil-name">${abil_name}</h3><p>${info}</p>`;
 selectors.container.insertAdjacentHTML(
   "afterbegin",
   `<img class="agent-img" src=${data.fullPortrait}>`
