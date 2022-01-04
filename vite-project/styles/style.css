@@ -10,7 +10,7 @@ body {
 .cards-display {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10rem;
+  margin-top: 2rem;
   background-color: #fd4556;
   column-gap: 2rem;
   justify-content: center space-around;

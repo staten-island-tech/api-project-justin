@@ -41,14 +41,14 @@ document.querySelectorAll(".button").forEach((button) =>
     if (name === data.displayName) {
       let info = data.role.description;
       let abil_name = data.role.displayName;
-      selectors.display.innerHTML = `<p class="agent-description">${data.description}</p><h3>${abil_name}</h3><p>${info}</p>`;
+      selectors.display.innerHTML = `<p class="agent-description">${data.description}</p><h3 class="abil-name">${abil_name}</h3><p>${info}</p>`;
     } else {
       let ability = buttons.filter(
         (ability) => ability.displayName === name
       )[0];
       let info = ability.description;
       let abil_name = ability.displayName;
-      selectors.display.innerHTML = `<h3>${abil_name}</h3><p>${info}</p>`;
+      selectors.display.innerHTML = `<h3 class="abil-name">${abil_name}</h3><p>${info}</p>`;
     }
   })
 );
