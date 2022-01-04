@@ -9,9 +9,12 @@ body {
   background-size: cover;
 }
 .header{
-  color: white;
+  color: #e3e3e3;
   text-align: center;
   font-family: 'Luxurious Roman', cursive;
+}
+header{
+  background-color: #233142;
 }
 .cards-display {
   display: flex;
