@@ -1,11 +1,17 @@
 @import url(base.css);
 @import url(flip.css);
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Oswald:wght@200;400&family=Outfit:wght@800&display=swap');
 body {
   background: url("/search-background.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.header{
+  color: white;
+  text-align: center;
+  font-family: 'Luxurious Roman', cursive;
 }
 .cards-display {
   display: flex;
@@ -29,7 +35,7 @@ body {
 
 .form-text {
   margin: auto;
-  margin-top: 8rem;
+  margin-top: 4rem;
   height: 4rem;
   width: 30rem;
   outline: none;
