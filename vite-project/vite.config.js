@@ -6,7 +6,7 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        nested: resolve(__dirname, "agent.html"),
+        nested: resolve(__dirname, "agent.html", "error.html"),
       },
     },
   },

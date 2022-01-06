@@ -11,6 +11,8 @@ async function getData(URL) {
     return data;
   } catch (error) {
     console.log(error);
+    window.localStorage.setItem("error", error)
+    window.location.href = "error.html"
   }
 }
 
