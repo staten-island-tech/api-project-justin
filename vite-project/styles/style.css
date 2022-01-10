@@ -47,7 +47,10 @@ header{
   font-size: 2rem;
 }
 @media (max-width: 1024px) {
-  
+  .agent-link {
+    width: 26%;
+    border: 8px double #fd4556;
+  }
 }
 @media (max-width: 768px) {
   header{
@@ -57,7 +60,7 @@ header{
     font-size: 4em;
   }
   .agent-link {
-    width: 30%;
+    width: 26%;
     border: 8px double #fd4556;
   }
   .container {
@@ -91,8 +94,8 @@ header{
     margin: auto;
   }
   .cards-display {
-    column-gap: 1rem;
-    row-gap: 1rem;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
   }
   .form-text {
     margin: auto;
