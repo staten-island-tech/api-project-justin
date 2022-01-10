@@ -59,7 +59,7 @@ body {
   font-size: 3em;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .agent-img {
     width: 70%;
   }
